@@ -546,6 +546,8 @@
   <script src="app.js"></script>
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     // Initialize EmailJS
     (function() {
@@ -590,14 +592,26 @@
     
             // Send email using EmailJS
             emailjs.send("service_jaj7j6i", "template_b4ydd4b", templateParams)
-                .then(function(response) {
-                    alert("Quote request sent successfully!");
-                    popup.style.display = "none"; // Close the popup after submission
-                    quoteForm.reset(); // Reset the form fields
-                }, function(error) {
-                    alert("Failed to send quote request. Please try again later.");
-                    console.log("EmailJS Error:", error); // Log error for debugging
+            .then(function(response) {
+                // Success alert with SweetAlert2
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Quote request sent successfully!',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
                 });
+                popup.style.display = "none";
+                quoteForm.reset();
+            }, function(error) {
+                // Error alert with SweetAlert2
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Failed to send quote request. Please try again later.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+                console.log("EmailJS Error:", error);
+            });
         });
     });
     </script>

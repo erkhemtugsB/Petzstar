@@ -129,6 +129,23 @@ h3 {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    .hero .container {
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-items: center; /* Center content */
+        text-align: center; /* Center-align text content */
+    }
+
+    .hero-text {
+        align-self: center; /* Center text vertically */
+        margin-top: 100px;
+    }
+
+    .hero-image {
+        align-self: center; /* Center image vertically */
+    }
+}
+
 .hero-image {
     align-self: end;
     justify-self: end;
@@ -136,8 +153,30 @@ h3 {
 }
 
 .hero-image img {
-    width: 450px;
+    width: 400px;
 }
+
+  @media only screen and (max-width: 768px) {
+    .hero-image img {
+        width: 300px;
+        margin: auto;
+        width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .hero-image img {
+        margin: auto;
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .hero-image img {
+        margin: auto;
+        width: 80%;
+    }
+  }
 
 .hero-text h1 {
     font-size: 6.4rem;
@@ -854,9 +893,9 @@ input {
         align-self: end;
     }
 
-    .hero-image img {
+    /* .hero-image img {
         width: 350px;
-    }
+    } */
 
     .welcome-card {
         display: grid;
@@ -905,10 +944,10 @@ input {
 }
 
 @media only screen and (max-width: 500px) {
-    .hero-image img {
-        width: 175px;
-    }
 
+    .hero-text {
+        margin-top:200px;
+    }
     .row {
         grid-template-columns: 1fr;
     }

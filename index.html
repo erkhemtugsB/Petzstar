@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
   <link href="/images/logo.png">
 
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
 
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -25,9 +27,7 @@
     <div class="container">
       <nav class="nav">
         <a href="index.html" class="logo">
-          <img src="./images/logo.png" class="logo"             
-          alt="PetZStar"
-          title="PetZStar"/>
+          <img src="./images/logo.png" class="logo" alt="PetZStar" title="PetZStar" />
         </a>
         <div class="hamburger-menu">
           <i class="fas fa-bars"></i>
@@ -58,32 +58,33 @@
     <div class="hero" id="hero">
       <div class="container">
         <div class="hero-text" style="display: flex; flex-direction: column;">
-          <h1>We care for your pet</h1>
-          <p>We always try to provide your pet the best services.</p>
+          <h1>NYC pet grooming and boutique</h1>
+          <p>We always provide the best service for your pet.</p>
           <div class="quote-button">
             <button id="quoteBtn">Book Now</button>
-  
+
             <div id="quotePopup" class="popup">
               <div class="popup-content">
                 <div class="popup-header">
                   <h2>Appointment</h2>
-                  <span class="close-x">&times;</span> <!-- Close button added here -->                </div>
+                  <span class="close-x">&times;</span> <!-- Close button added here -->
+                </div>
                 <form id="quoteForm">
                   <label for="name" placeholder="John">Name:</label>
-                  <input type="text" id="name" name="name" required>
-  
+                  <input type="text" id="name" name="name" placeholder="John Doe">
+
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="email" placeholder="example@example.com">
 
                   <label for="phone">Phone:</label>
-                  <input type="phone" id="phone" name="phone" required>
-  
+                  <input type="phone" id="phone" name="phone" placeholder="123-456-7890">
+
                   <label for="date">Preferred Date:</label>
-                  <input type="date" id="date" name="date" required>
-  
+                  <input type="date" id="date" name="date" placeholder="2024.01.01">
+
                   <label for="time">Preferred Time:</label>
-                  <input type="time" id="time" name="time" required>
-  
+                  <input type="time" id="time" name="time" placeholder="13:30">
+
                   <button type="submit" id="submit-form">Submit</button>
                 </form>
               </div>
@@ -110,11 +111,11 @@
 
         <div class="welcome-card">
           <div class="welcome-card-1-text">
-            <h2>Love & Care</h2>
+            <h2>Grooming</h2>
             <p>
-              Far far away, behind the word mountains, Separated they live in
-              Bookmarksgrove right at the coast of the Semantics, a large
-              language ocean.
+              Our professional grooming service ensures your pet looks and feels their best. 
+              Our gentle and experienced groomers use high-quality 
+              products to clean, detangle, and style, leaving your pet feeling fresh and fabulous. 
             </p>
             <a href="#">Read More</a>
           </div>
@@ -128,11 +129,11 @@
             <img src="images/dogger-2.jpg" alt="big dog with his tongue out" />
           </div>
           <div class="welcome-card-2-text">
-            <h2>Fearsome</h2>
+            <h2>Bathing</h2>
             <p>
-              Far far away, behind the word mountains, Separated they live in
-              Bookmarksgrove right at the coast of the Semantics, a large
-              language ocean.
+              Give your pet the pampering they deserve with our luxurious bathing service! 
+              Perfect for routine cleaning or an extra treat, our baths are designed 
+              to make every pet feel refreshed.
             </p>
             <a href="#">Read More</a>
           </div>
@@ -140,11 +141,11 @@
 
         <div class="welcome-card">
           <div class="welcome-card-3-text">
-            <h2>Beautiful</h2>
+            <h2>Nail Trimming</h2>
             <p>
-              Far far away, behind the word mountains, Separated they live in
-              Bookmarksgrove right at the coast of the Semantics, a large
-              language ocean.
+              Keep your pet’s paws healthy and comfortable with our nail-cutting service.
+               Our trained staff knows how to carefully trim nails to the ideal 
+               length, reducing stress and making the experience quick and smooth for your pet.
             </p>
             <a href="#">Read More</a>
           </div>
@@ -161,25 +162,25 @@
           <i class="fas fa-paw second-paw"></i>
           <h2>About Us</h2>
           <h3>
-            Separated they live in Bookmarksgrove right at the coast of the
-            Semantics, a large language ocean.
+            Welcome to Pet Z Star, where we believe pets are family!
           </h3>
           <p class="about-paragraph">
-            A small river named Duden flows by their place and supplies it
-            with the necessary regelialia. It is a paradisematic country, in
-            which roasted parts of sentences fly into your mouth.
+            Founded with a passion
+              for animals and a commitment to their well-being, we provide a range of services designed to
+              meet all your pet's needs. Whether it’s daily walks, playtime, grooming, or vacation care, we
+              make sure each pet feels comfortable, safe, and loved while in our care.
           </p>
           <div class="text-with-paw">
             <i class="fas fa-paw small-paw"></i>
-            <p>A small river named Duden flows</p>
+            <p>Grooming</p>
           </div>
           <div class="text-with-paw">
             <i class="fas fa-paw small-paw"></i>
-            <p>It is a paradisematic country</p>
+            <p>Bathing</p>
           </div>
           <div class="text-with-paw">
             <i class="fas fa-paw small-paw"></i>
-            <p>Roasted parts of sentences fly</p>
+            <p>Boarding</p>
           </div>
         </div>
         <div class="about-image">
@@ -194,16 +195,14 @@
           <i class="fas fa-paw white-paw"></i>
           <h2>Our Trainers</h2>
           <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts.
+            Our staffs treat your pet with love
           </p>
         </div>
 
         <div class="trainers-container">
           <div class="trainer-1">
             <img src="images/dogger-trainer-1.jpg" alt="dogger trainer Jessica White" />
-            <h3>Jessica White</h3>
-            <p>
+            <!-- <p>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts.
             </p>
@@ -211,11 +210,11 @@
               <i class="fab fa-twitter icon"></i>
               <i class="fab fa-instagram icon"></i>
               <i class="fab fa-facebook icon"></i>
-            </div>
+            </div> -->
           </div>
           <div class="trainer-2">
             <img src="images/dogger-trainer-2.jpg" alt="dogger trainer Jessica White" />
-            <h3>Valerie Elash</h3>
+            <!-- <h3>Valerie Elash</h3>
             <p>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts.
@@ -224,11 +223,11 @@
               <i class="fab fa-twitter icon"></i>
               <i class="fab fa-instagram icon"></i>
               <i class="fab fa-facebook icon"></i>
-            </div>
+            </div> -->
           </div>
           <div class="trainer-3">
             <img src="images/dogger-trainer-3.jpg" alt="dogger trainer Jessica White" />
-            <h3>Alicia Jones</h3>
+            <!-- <h3>Alicia Jones</h3>
             <p>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts.
@@ -237,7 +236,7 @@
               <i class="fab fa-twitter icon"></i>
               <i class="fab fa-instagram icon"></i>
               <i class="fab fa-facebook icon"></i>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -254,7 +253,7 @@
           </p>
         </div> -->
 
-        <!-- <div class="pricing-boxes">
+    <!-- <div class="pricing-boxes">
           <div class="pricing-box-1">
             <h3>Basic</h3>
             <div class="price"><span>$47</span> / year</div>
@@ -345,7 +344,7 @@
             </div>
           </div>
         </div> -->
-      </div>
+    </div>
     </div>
 
     <div class="photo-gallery">
@@ -407,57 +406,50 @@
           <i class="fas fa-paw"></i>
           <h2>Our Services</h2>
           <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts.
+            We offer a full range of pet care services, from grooming and day care to boarding and more, all designed to keep your pet happy, healthy, and well-loved.
           </p>
         </div>
         <div class="services-container">
           <div class="service service-1">
-            <img src="images/dogger-icon-1.svg" alt="" />
-            <h3>Pet Checkup</h3>
+            <img src="images/boarding-icon.png" alt="" />
+            <h3>Boarding</h3>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              Our boarding service provides a safe, cozy, and caring home-away-from-home for your pet while you're away.
             </p>
           </div>
           <div class="service service-2">
             <img src="images/dogger-icon-2.svg" alt="" />
-            <h3>Pet Dermatology</h3>
+            <h3>Haircuts</h3>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              Keep your pet looking sharp and stylish with our breed-specific and customized haircut services.
             </p>
           </div>
           <div class="service service-3">
-            <img src="images/dogger-icon-3.svg" alt="" />
-            <h3>For Strong Teeth</h3>
+            <img src="images/dogger-icon-3.png" alt="" />
+            <h3>Bathing</h3>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              Our soothing baths use gentle, pet-safe products to leave your pet’s coat clean, soft, and fresh.
             </p>
           </div>
           <div class="service service-4">
             <img src="images/dogger-icon-4.svg" alt="" />
-            <h3>Dog First Aid</h3>
+            <h3> Day Care</h3>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              Your pet will enjoy a fun-filled day with plenty of play, socialization, and personalized care in our day care.
             </p>
           </div>
           <div class="service service-5">
             <img src="images/dogger-icon-5.svg" alt="" />
-            <h3>Dog Dryer</h3>
+            <h3>Grooming</h3>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              Our grooming services ensure your pet is well-groomed, pampered, and looking their best from head to tail.
             </p>
           </div>
           <div class="service service-6">
-            <img src="images/dogger-icon-6.svg" alt="" />
-            <h3>Expert Veterinarian</h3>
+            <img src="images/nail-icon.png" alt="" />
+            <h3>Nail Trimming</h3>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+              Keep your pet’s paws comfortable and healthy with our stress-free, safe nail trimming service.
             </p>
           </div>
         </div>
@@ -471,20 +463,20 @@
           <div class="form-group">
             <div>
               <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" />
+              <input type="text" name="firstName" id="firstName" placeholder="John"/>
             </div>
             <div>
               <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName" />
+              <input type="text" name="lastName" id="lastName" placeholder="Doe"/>
             </div>
           </div>
           <div class="email-group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="example@example.com" />
           </div>
           <div class="subject-group">
             <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" />
+            <input type="text" name="subject" id="subject" placeholder="Subject"/>
           </div>
           <div class="message-group">
             <label for="message">Message</label>
@@ -507,7 +499,8 @@
             </div>
             <div class="location">
               <h3>Address</h3>
-              <p>Sec-37, Noida, 201301, In</p>
+              <p>31-02 34th Ave
+                Astoria, NY 11106</p>
             </div>
           </div>
 
@@ -517,7 +510,7 @@
             </div>
             <div class="talk">
               <h3>Phone</h3>
-              <p>+91 XXXXXXXXXX</p>
+              <p>718-726-0760</p>
             </div>
           </div>
 
@@ -527,7 +520,7 @@
             </div>
             <div class="support">
               <h3>Email</h3>
-              <p>doggy@gmail.com</p>
+              <p>petzstarllc@gmail.com</p>
             </div>
           </div>
         </div>
@@ -544,77 +537,77 @@
   </footer>
 
   <script src="app.js"></script>
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <!-- Alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     // Initialize EmailJS
-    (function() {
-        emailjs.init("TXOT5acUK8e-cgQm3"); // Replace with your EmailJS user ID
+    (function () {
+      emailjs.init("TXOT5acUK8e-cgQm3"); // Replace with your EmailJS user ID
     })();
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const quoteBtn = document.getElementById("quoteBtn");
-        const popup = document.getElementById("quotePopup");
-        const closeBtn = document.querySelector(".close-x");
-        const quoteForm = document.getElementById("quoteForm");
-    
-        // Show popup when "Book Now" button is clicked
-        quoteBtn.addEventListener("click", function() {
-            popup.style.display = "flex"; // Make the popup visible
-        });
-    
-        // Close the popup when X button is clicked
-        closeBtn.addEventListener("click", function() {
-            popup.style.display = "none"; // Hide the popup
-        });
-    
-        // Form submission handler (on form submit)
-        quoteForm.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
-    
-            // Collect form data
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-            const date = document.getElementById("date").value;
-            const time = document.getElementById("time").value;
-    
-            // Define EmailJS parameters
-            const templateParams = {
-                name: name,
-                email: email,
-                phone: phone,
-                date: date,
-                time: time
-            };
-    
-            // Send email using EmailJS
-            emailjs.send("service_jaj7j6i", "template_b4ydd4b", templateParams)
-            .then(function(response) {
-                // Success alert with SweetAlert2
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Quote request sent successfully!',
-                    icon: 'success',
-                    confirmButtonText: 'OK'
-                });
-                popup.style.display = "none";
-                quoteForm.reset();
-            }, function(error) {
-                // Error alert with SweetAlert2
-                Swal.fire({
-                    title: 'Error!',
-                    text: 'Failed to send quote request. Please try again later.',
-                    icon: 'error',
-                    confirmButtonText: 'OK'
-                });
-                console.log("EmailJS Error:", error);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const quoteBtn = document.getElementById("quoteBtn");
+      const popup = document.getElementById("quotePopup");
+      const closeBtn = document.querySelector(".close-x");
+      const quoteForm = document.getElementById("quoteForm");
+
+      // Show popup when "Book Now" button is clicked
+      quoteBtn.addEventListener("click", function () {
+        popup.style.display = "flex"; // Make the popup visible
+      });
+
+      // Close the popup when X button is clicked
+      closeBtn.addEventListener("click", function () {
+        popup.style.display = "none"; // Hide the popup
+      });
+
+      // Form submission handler (on form submit)
+      quoteForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Collect form data
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+
+        // Define EmailJS parameters
+        const templateParams = {
+          name: name,
+          email: email,
+          phone: phone,
+          date: date,
+          time: time
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_jaj7j6i", "template_b4ydd4b", templateParams)
+          .then(function (response) {
+            // Success alert with SweetAlert2
+            Swal.fire({
+              title: 'Success!',
+              text: 'Quote request sent successfully!',
+              icon: 'success',
+              confirmButtonText: 'OK'
             });
-        });
+            popup.style.display = "none";
+            quoteForm.reset();
+          }, function (error) {
+            // Error alert with SweetAlert2
+            Swal.fire({
+              title: 'Error!',
+              text: 'Failed to send quote request. Please try again later.',
+              icon: 'error',
+              confirmButtonText: 'OK'
+            });
+            console.log("EmailJS Error:", error);
+          });
+      });
     });
-    </script>
+  </script>
 </body>
 
 </html>

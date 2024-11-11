@@ -51,7 +51,7 @@ h3 {
 
 .header {
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     display: flex;
     align-items: center;
     position: fixed;
@@ -68,27 +68,30 @@ h3 {
     height: 7rem;
 }
 
+
 /* Nav */
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;  /* Ensures the nav can stretch independently of container */
+    top: 0;
+    left: 0;             /* Aligns the nav to the left */
+    right: 0;            /* Aligns the nav to the right */
+    width: 100%;         /* Stretches the nav to full width */
+    padding: 0 20px;     /* Adjust padding to fit inside the viewport */
+    background-color: #feda47;  /* Set background color for the nav */
+    color: #fff;         /* Text color */
 }
 
 .logo {
     display: flex;
     align-items: baseline;
+    width: 70px;
+    padding: 5px;
 }
 
-.logo h2 {
-    font-weight: normal;
-    font-size: 3.2rem;
-}
 
-.logo span {
-    color: #a2c0be;
-    font-size: 3.2rem;
-}
 
 .hamburger-menu {
     display: none;
@@ -163,7 +166,7 @@ h3 {
 
 .fa-paw {
     font-size: 4rem;
-    color: #a2c0be;
+    color: #feda47;
 }
 
 .welcome-text h2 {
@@ -201,14 +204,14 @@ h3 {
 }
 
 .welcome-card img:hover {
-    box-shadow: 10px 10px 5px #a2c0be;
+    box-shadow: 10px 10px 5px #feda47;
 }
 
 .welcome-card a {
     display: inline-block;
     margin-top: 2rem;
     padding: 1rem 3rem;
-    background-color: #a2c0be;
+    background-color: #feda47;
     color: #fff;
     border-radius: 3rem;
     transition: background-color 0.3s ease;
@@ -217,6 +220,94 @@ h3 {
 .welcome-card a:hover {
     background-color: #87a1a0;
 }
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-header h2 {
+    margin: 0;
+}
+
+
+.popup-content {
+    margin-top: 70px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    overflow-y: auto; /* Scroll within popup content if it exceeds max-height */
+    max-height: 80vh;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.popup-content input {
+    width: 100% !important;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(237, 236, 236);
+}
+
+.close-x {
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-x:hover {
+    color: #ff0000;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #feda47;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 /* About */
 .about {
@@ -240,7 +331,7 @@ h3 {
 }
 
 .about-image img:hover {
-    box-shadow: 10px 10px 5px #a2c0be;
+    box-shadow: 10px 10px 5px #feda47;
 }
 
 .about-text h2 {
@@ -276,7 +367,7 @@ h3 {
 
 /* Trainers */
 .trainers {
-    background-color: #8ab4b2;
+    background-color: #feda47;
     padding-bottom: 10rem;
 }
 
@@ -548,7 +639,7 @@ h3 {
 }
 
 .contact-form {
-    background-color: #a2c0be;
+    background-color: #feda47;
     padding: 5rem;
     width: 54rem;
 }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .email-header {
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .email-header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .email-body {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 6px;
+    }
+
+    .email-body p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .email-details {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 6px;
+    }
+
+    .email-details div {
+      margin-bottom: 10px;
+    }
+
+    .email-details label {
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="email-container">
+    <div class="email-header">
+      <h1>Appointment Request</h1>
+    </div>
+
+    <div class="email-body">
+      <p>Dear PetZStar Team,</p>
+      <p>You have received a new appointment request. Below are the details submitted by the customer:</p>
+      
+      <div class="email-details">
+        <div>
+          <label>Name:</label>
+          <span>{{name}}</span>
+        </div>
+        <div>
+          <label>Email:</label>
+          <span>{{email}}</span>
+        </div>
+        <div>
+          <label>Phone:</label>
+          <span>{{phone}}</span>
+        </div>
+        <div>
+          <label>Preferred Date:</label>
+          <span>{{date}}</span>
+        </div>
+        <div>
+          <label>Preferred Time:</label>
+          <span>{{time}}</span>
+        </div>
+      </div>
+
+      <p>Thank you for your attention to this request. We look forward to assisting the customer with their appointment.</p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; {{year}} PetZStar. All rights reserved.</p>
+    </div>
+  </div>
+
+</body>
+</html>

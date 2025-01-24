@@ -56,3 +56,14 @@ document.querySelector(".close-x").addEventListener("click", function() {
             });
     });
 });
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById("newCustomerPopup").style.display = "none";
+  }
+  
+  // Auto-hide the popup after 5 seconds
+  setTimeout(() => {
+    closePopup();
+  }, 5000);
+  

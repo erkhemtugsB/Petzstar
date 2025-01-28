@@ -1053,6 +1053,12 @@ input {
         font-size: 2rem;
     }
 
+    .welcome-card-2-text-mobile {
+        margin-left: 0;
+        text-align: center;
+        display: none;
+    }
+
     .welcome-card-1-text,
     .welcome-card-2-text,
     .welcome-card-3-text {
@@ -1060,8 +1066,18 @@ input {
         margin-right: 0;
     }
 
+
     .welcome-card-2-text {
         margin-left: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .welcome-card-2-text {
+            display: none;
+        }
+        .welcome-card-2-text-mobile {
+            display: block !important;
+        }
     }
 
     .welcome-card a {

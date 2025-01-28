@@ -773,7 +773,6 @@ button:hover {
     width: 100%;
     transform: scale(1.25);
     transition: all 0.5s ease;
-    opacity: 0.7;
 }
 
 .photo img:hover {
@@ -1170,7 +1169,6 @@ input {
   /* Each individual photo styling */
   .photo {
     width: 22%; /* Adjust width to fit 4 images per row (with spacing) */
-    height: 250px; /* Set a fixed height */
     overflow: hidden; /* Hide any part of the image that overflows */
     border-radius: 10px; /* Optional: rounded corners */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */

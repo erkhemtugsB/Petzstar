@@ -381,12 +381,8 @@ h3 {
 
 .welcome-card img {
     width: 100%;
-    transition: box-shadow 0.5s;
 }
 
-.welcome-card img:hover {
-    box-shadow: 10px 10px 5px #feda47;
-}
 
 .welcome-card a {
     display: inline-block;
@@ -512,10 +508,6 @@ button:hover {
     transition: box-shadow 0.5s;
 }
 
-.about-image img:hover {
-    box-shadow: 10px 10px 5px #feda47;
-}
-
 .about-text h2 {
     text-transform: uppercase;
     font-size: 3.2rem;
@@ -584,7 +576,6 @@ button:hover {
 .trainers-container img {
     width: 100%;
     max-width: 400px;
-    transition: box-shadow 0.5s;
 }
 
 /* Trainer Image Styling */
@@ -596,11 +587,8 @@ button:hover {
     height: 300px; /* Set height for consistency */
     overflow: hidden; /* Hide any overflowed content */
     border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow for styling */
   }
-.trainers-container img:hover {
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);
-}
+
 
 .trainers-container h3 {
     font-size: 2.1rem;
@@ -772,7 +760,6 @@ button:hover {
 .photo img {
     width: 100%;
     transform: scale(1.25);
-    transition: all 0.5s ease;
 }
 
 .photo img:hover {

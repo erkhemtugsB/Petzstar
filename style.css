@@ -764,7 +764,6 @@ button:hover {
 
 .photo img:hover {
     opacity: 1;
-    transform: scale(1.15);
 }
 
 /* Services */
